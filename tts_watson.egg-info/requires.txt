@@ -1,0 +1,6 @@
+Flask
+requests
+pyaudio>=0.2.9
+pyyaml>=3.08
+anyconfig
+bunch>=1.0.1
