@@ -1,3 +1,0 @@
-[console_scripts]
-tts-watson = tts_watson.__main__:main
-
