@@ -1,5 +1,5 @@
-# stt-watson
-Speech to text using watson in python with websocket and record from microphone
+# tts-watson
+Text to speech using watson
 
 **Note:** To gain in performance response from watson are streamed and directly send to pyaudio to hear it.
 
