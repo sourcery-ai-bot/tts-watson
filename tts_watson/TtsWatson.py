@@ -23,7 +23,7 @@ class TtsWatson:
                            auth=(self.user, self.password),
                            params={'text': text, 'voice': self.voice, 'accept': self.ACCEPT},
                            stream=True, verify=False)
-        print(type(req))
+
         p = pyaudio.PyAudio()
 
         stream = p.open(format=p.get_format_from_width(self.SAMPWIDTH),
