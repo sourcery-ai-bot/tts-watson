@@ -4,9 +4,13 @@ import anyconfig
 from tts_watson.TtsWatson import TtsWatson
 import bunch
 import requests
+import sys
 
 
 def main():
+    
+    py3_input_conversion = lambda x: input(x) if sys.version_info.major >=3 else raw_input(x)
+    
     requests.packages.urllib3.disable_warnings()
     defaultConfig = {
         'url': 'https://stream.watsonplatform.net/text-to-speech/api',
@@ -27,10 +31,10 @@ def main():
     args = parser.parse_args()
     conf = anyconfig.container(defaultConfig)
     if not os.path.isfile(args.configFile):
-        print "Config file '" + args.configFile + "' doesn't exist."
-        print "Creating it ..."
-        user = raw_input("Watson user: ")
-        password = raw_input("Watson password: ")
+        print("Config file '" + args.configFile + "' doesn't exist.")
+        print("Creating it ...")
+        user = py3_input_conversion("Watson user: ")
+        password = py3_input_conversion("Watson password: ")
         bconf = bunch.bunchify(conf)
         bconf.user = user
         bconf.password = password

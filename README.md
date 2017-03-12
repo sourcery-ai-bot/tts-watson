@@ -5,7 +5,7 @@ Text to speech using watson
 
 ## Requirements
 
-- **Python 2.7**
+- **Python 2.7 or higher**
 - **Pip**
 - **portaudio**, can be installed with `brew install portaudio` (mac) or `apt-get install portaudio19-dev`(linux)
 
