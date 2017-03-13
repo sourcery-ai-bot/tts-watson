@@ -1,34 +1,34 @@
-# tts-watson
-Text to speech using watson
+# IBM Watson TTS
+===========================
 
-**Note:** To gain in performance response from watson are streamed and directly send to pyaudio to hear it.
+This package leverages IBM Watson's TTS A.P.I to stream audio of text using pyaudio. This improves performance response.
 
 ## Requirements
 
 - **Python 2.7 or higher**
-- **Pip**
-- **portaudio**, can be installed with `brew install portaudio` (mac) or `apt-get install portaudio19-dev`(linux)
+- **pip**
+- **portaudio**[1]
+
+[1] Can be installed with `brew install portaudio` (MAC OS) or `apt-get install portaudio19-dev` (Linux).
 
 ## Installation
 
-Install with pip: `pip install tts-watson`
+Run: `pip install tts-watson`
 
-## Run the playground
+## CLI
 
-Simply run in command line: `tts-watson text to sound i want` (you will hear: `text to sound i want`)
+Note: Your Waston credentials will be initially requested. A config file located at `~/.config-tts-watson.yml` will be created.
 
-**At the first launch it will create a config file located to `~/.config-tts-watson.yml` and ask you your watson credentials**
+Run in the command line: `tts-watson text to sound i want`. You will hear `text to sound i want` played back to you.
 
-## Usage for developers
-
-Bootstrap example:
+## Example Of Usage
 
 ```python
 from tts_watson.TtsWatson import TtsWatson
 
-ttsWatson = TtsWatson('watson_user', 'watson_password', 'en-US_AllisonVoice') # en-US_AllisonVoice is a voice from watson you can found more to: https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/text-to-speech/using.shtml#voices
+ttsWatson = TtsWatson('watson_user', 'watson_password', 'en-US_AllisonVoice') #[2] 
 ttsWatson.play("The text which i want to be a sound")
 ```
 
-
+[2]"en-US_AllisonVoice" is one of many possible voices tp use. Find more [here](https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/text-to-speech/using.shtml#voices).
 
