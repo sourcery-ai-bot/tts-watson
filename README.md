@@ -1,5 +1,4 @@
 # IBM Watson TTS
-===========================
 
 This package leverages IBM Watson's TTS A.P.I to stream audio of text using pyaudio. This improves performance response.
 
@@ -17,7 +16,7 @@ Run: `pip install tts-watson`
 
 ## CLI
 
-Note: Your Waston credentials will be initially requested. A config file located at `~/.config-tts-watson.yml` will be created.
+Your Waston credentials will be initially requested. A config file located at `~/.config-tts-watson.yml` will be created. 
 
 Run in the command line: `tts-watson text to sound i want`. You will hear `text to sound i want` played back to you.
 
@@ -30,5 +29,5 @@ ttsWatson = TtsWatson('watson_user', 'watson_password', 'en-US_AllisonVoice') #[
 ttsWatson.play("The text which i want to be a sound")
 ```
 
-[2]"en-US_AllisonVoice" is one of many possible voices tp use. Find more [here](https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/text-to-speech/using.shtml#voices).
+[2] `en-US_AllisonVoice` is one of many possible voices to use. Find more [here](https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/text-to-speech/using.shtml#voices).
 
