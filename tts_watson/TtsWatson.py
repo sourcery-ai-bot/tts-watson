@@ -18,7 +18,6 @@ class TtsWatson:
         self.chunk = int(chunk)
 
     def play(self, text):
-        print("Transform '" + str(text) + "' into sound")
         req = requests.get(self.url + "/v1/synthesize",
                            auth=(self.user, self.password),
                            params={'text': text, 'voice': self.voice, 'accept': self.ACCEPT},
@@ -41,4 +40,4 @@ class TtsWatson:
         stream.stop_stream()
         stream.close()
         p.terminate()
-        print("Text: '" + str(text) + "' has been transformed !")
+        print("Synthesize complete")

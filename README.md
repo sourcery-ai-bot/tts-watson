@@ -29,5 +29,5 @@ ttsWatson = TtsWatson('watson_user', 'watson_password', 'en-US_AllisonVoice') #[
 ttsWatson.play("The text which i want to be a sound")
 ```
 
-[2] `en-US_AllisonVoice` is one of many possible voices to use. Find more [here](https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/text-to-speech/using.shtml#voices).
+[2] `en-US_AllisonVoice` is one of many possible voices to use. You can see the full list [here](https://www.ibm.com/watson/developercloud/text-to-speech/api/v1/#get_voice) and descriptions [here](https://www.ibm.com/watson/developercloud/text-to-speech/api/v1/#get_voices).
 
