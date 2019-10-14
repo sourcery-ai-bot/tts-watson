@@ -2,6 +2,10 @@
 
 This package leverages IBM Watson's TTS A.P.I to stream audio of text using pyaudio. This improves performance response.
 
+## Looking For New Maintainer
+
+I took over this repo in 2017 when I needed it for a project but lost interest. If anyone needs is interested in its upkeep then let me know.
+
 ## Requirements
 
 - **Python 2.7 or higher**
