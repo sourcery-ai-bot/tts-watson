@@ -1,5 +1,7 @@
 # IBM Watson TTS
 
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 This package leverages IBM Watson's TTS A.P.I to stream audio of text using pyaudio. This improves performance response.
 
 ## Looking For New Maintainer
